@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:image" content="https://dev.danielberryman.com/assets/logo.png">
+    <meta property="og:title" content="Daniel Berryman Dev Portfolio">
+    <meta property="og:description" content="Portfolio of Dev/Engineering Work">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://dev.danielberryman.com">
+
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+
+    <!-- <link rel="preconnect" href="https://rsms.me/"> -->
+    <!-- <link rel="stylesheet" href="https://rsms.me/inter/inter.css"> -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="styles/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles/layout.css" />
+    <link rel="stylesheet" href="styles/background.css" />
+    <link rel="stylesheet" href="styles/carousel.css" />
+    <link rel="stylesheet" href="styles/index.css" />
+
+    <title>Daniel Berryman Dev Portfolio</title>
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <header class="d-flex flex-column justify-content-end pb-5 gap-2 header-pt">
+            <div class="row px-5">
+                <div class="col-12 col-md-6 col-lg-4 d-flex align-items-end">
+                    <h1 class="m-0 fw-normal">Hi, I'm Daniel</h1>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 d-flex align-items-end">
+                    <h2 class="m-0 fw-normal fs-3">WEB DEVELOPER</h2>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                </div>
+            </div>
+        </header>
+    
+        <main>
+            <div class="main-content">
+                <div class="row px-5">
+                    <div class="col-12">
+                        <div class="carousel-wrapper">
+                            <div class="nav-slide active">home</div>
+                            <div class="nav-slide">about</div>
+                            <div class="nav-slide">services</div>
+                            <div class="nav-slide">portfolio</div>
+                            <div class="nav-slide">blog</div>
+                            <div class="nav-slide">contact</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row px-5">
+                    <div class="col-6 d-flex align-items-center justify-content-start">
+                        <button id="prevBtn" class="btn p-0 d-flex align-items-center">
+                            <!-- <div id="prevLabel" class="pe-2 text-muted small"></div> -->
+                            <div id="prevLabel" class="text-muted">&larr;</div>
+                        </button>
+                    </div>
+                    <div class="col-6 d-flex align-items-center justify-content-end">
+                        <button id="nextBtn" class="btn p-0 d-flex align-items-center">
+                            <div id="nextLabel" class="pe-2 text-muted">&rarr;</div>
+                            <!-- <div id="nextLabel" class="text-muted small pe-2"></div> -->
+                        </button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="main-carousel-wrapper text-white">
+                            <div class="bg-primary main-slide active pt-4">
+                                <div class="multi-column-text px-5">
+                                    <p>I’m a learner, creator, and problem-solver who’s spent the last six years working across
+                                        the full stack—building apps, API integrations, and internal tools, mainly in
+                                        JavaScript/TypeScript with Node.js, Prisma, and frontend frameworks. My main goal, no
+                                        matter the tech stack, is always the same: reduce friction, increase value. Whether I’m
+                                        writing backend services, launching businesses, or singing to a crowd, I’m looking for
+                                        the moment where things become easier, clearer, and more meaningful.</p>
+                                    <p>Before I was a software engineer, I worked as a Broadway performer, and that experience
+                                        fundamentally shaped how I think about collaboration, communication, and clarity of
+                                        vision. Acting taught me how to listen deeply, tell stories that resonate, and bring
+                                        consistency to every performance. These skills transferred naturally to engineering,
+                                        where the core work is just another kind of performance—one that balances precision with
+                                        creativity and requires knowing your audience just as much as your tools.</p>
+                                    <p>I began my tech journey at Herff Jones, where I worked for almost four years—first on a
+                                        full-stack support team, debugging bugs across the stack and documenting internal tools,
+                                        then on a frontend-focused scrum team. I eventually transitioned into a Solutions
+                                        Engineer role, where I dove deeper into backend systems and API development. From there,
+                                        I joined Marin Software as a backend engineer, where I built integrations between
+                                        third-party ad APIs and internal systems using Node.js, TypeScript, Kafka, and SQL. One
+                                        of my proudest contributions was re-architecting a cron-driven cost and revenue process,
+                                        abstracting common patterns while preserving flexibility for ad network-specific quirks.
+                                        It saved future devs countless hours and transformed the onboarding experience for new
+                                        plugins into a form-driven setup.</p>
+                                    <p>Through all of this, one of the key lessons I’ve learned is the art of iteration—not just
+                                        in code, but in how we think, communicate, and improve over time. I also think a lot
+                                        about the choice every engineer makes daily: to abstract or not to abstract. I believe
+                                        in abstraction only when it reveals clarity, not when it hides complexity. Sometimes the
+                                        most reusable solutions are the simplest, and sometimes the best thing you can do is
+                                        name something clearly and leave it alone.</p>
+                                    <p>What excites me most now is bringing that mindset—technical precision, human-centered
+                                        thinking, and a love of process—to teams that want to solve real problems. I want to
+                                        help businesses and developers alike reduce confusion, find focus, and build systems
+                                        that scale their impact. Because when you clarify the problem, and design with care, the
+                                        solution can do more than just work—it can sing.</p>
+                                </div>
+                            </div>
+                            <div class="bg-secondary main-slide pt-4">
+                                <div class="row px-5">
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <h4 class="m-0 fw-normal">Technology</h4>
+                                        <p>lorem ipsum</p>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <h4 class="m-0 fw-normal">Web3</h4>
+                                        <p>lorem ipsum</p>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <h4 class="m-0 fw-normal">Soverignty</h4>
+                                        <p>lorem ipsum</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-warning main-slide pt-4">
+                                <div class="row px-5">
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <h4 class="m-0 fw-normal">Technology</h4>
+                                        <p>lorem ipsum</p>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <h4 class="m-0 fw-normal">Web3</h4>
+                                        <p>lorem ipsum</p>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <h4 class="m-0 fw-normal">Soverignty</h4>
+                                        <p>lorem ipsum</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-success main-slide pt-4">
+                                <div class="row px-5">
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <h4 class="m-0 fw-normal">Technology</h4>
+                                        <p>lorem ipsum</p>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <h4 class="m-0 fw-normal">Web3</h4>
+                                        <p>lorem ipsum</p>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <h4 class="m-0 fw-normal">Soverignty</h4>
+                                        <p>lorem ipsum</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-primary main-slide pt-4">
+                                <div class="row px-5">
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <h4 class="m-0 fw-normal">Technology</h4>
+                                        <p>lorem ipsum</p>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <h4 class="m-0 fw-normal">Web3</h4>
+                                        <p>lorem ipsum</p>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <h4 class="m-0 fw-normal">Soverignty</h4>
+                                        <p>lorem ipsum</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-secondary main-slide pt-4">
+                                <div class="row px-5">
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <h4 class="m-0 fw-normal">Technology</h4>
+                                        <p>lorem ipsum</p>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <h4 class="m-0 fw-normal">Web3</h4>
+                                        <p>lorem ipsum</p>
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4">
+                                        <h4 class="m-0 fw-normal">Soverignty</h4>
+                                        <p>lorem ipsum</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    
+        <footer class="text-center m-0 py-4 small position-relative">
+            &copy; 2025 dev.danielberryman.com. All rights reserved.
+        </footer>
+    </div>
+
+    <script>
+        const slides = document.querySelectorAll('.nav-slide');
+        const mainSlides = document.querySelectorAll('.main-slide');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const prevLabel = document.getElementById('prevLabel');
+        const nextLabel = document.getElementById('nextLabel');
+
+        let currentIndex = 0;
+
+        function updateSlides() {
+            slides.forEach((slide, index) => {
+                slide.classList.remove('active', 'prev');
+
+                if (index === currentIndex) {
+                    slide.classList.add('active');
+                } else if (index === currentIndex - 1) {
+                    slide.classList.add('prev');
+                }
+            });
+            mainSlides.forEach((slide, index) => {
+                slide.classList.remove('active', 'prev');
+
+                if (index === currentIndex) {
+                    slide.classList.add('active');
+                } else if (index === currentIndex - 1) {
+                    slide.classList.add('prev');
+                }
+            });
+
+            // prevLabel.textContent = slides[currentIndex - 1]?.textContent.trim() || '';
+            // nextLabel.textContent = slides[currentIndex + 1]?.textContent.trim() || '';
+
+            prevBtn.disabled = currentIndex === 0;
+            nextBtn.disabled = currentIndex === slides.length - 1;
+        }
+
+        prevBtn.addEventListener('click', () => {
+            if (currentIndex > 0) currentIndex--;
+            updateSlides();
+        });
+
+        nextBtn.addEventListener('click', () => {
+            if (currentIndex < slides.length - 1) currentIndex++;
+            updateSlides();
+        });
+
+        document.addEventListener("keydown", function (event) {
+            if (event.key === "ArrowLeft") {
+                prevLabel.click();
+            } else if (event.key === "ArrowRight") {
+                nextLabel.click();
+            }
+        })
+
+        window.addEventListener('load', updateSlides);
+    </script>
+</body>
+
+</html>

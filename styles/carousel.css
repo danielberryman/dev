@@ -1,0 +1,37 @@
+html,
+body {
+    height: auto !important;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Prevent Bootstrap flexbox containers from messing with your layout */
+.carousel-container,
+.carousel-track,
+.carousel-item {
+    all: unset;
+    /* completely resets Bootstrap interference */
+}
+
+.carousel-container {
+    overflow: hidden;
+    width: 100vw;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    flex: 0 0 100vw;
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.active {
+    font-weight: bold;
+    font-size: 2rem;
+}

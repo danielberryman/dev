@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles/bootstrap.min.css" />
+  <title>Flex Carousel</title>
+  <style>
+    html,
+    body {
+      height: auto !important;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+
+    /* Prevent Bootstrap flexbox containers from messing with your layout */
+    .carousel-container,
+    .carousel-track,
+    .carousel-item {
+      all: unset;
+      /* completely resets Bootstrap interference */
+    }
+
+    .carousel-container {
+      overflow: hidden;
+      width: 100vw;
+    }
+
+    .carousel-track {
+      display: flex;
+      transition: transform 0.5s ease;
+    }
+
+    .carousel-item {
+      flex: 0 0 100vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 2rem;
+      color: white;
+    }
+
+    .controls {
+      display: flex;
+      justify-content: space-between;
+      max-width: 600px;
+      margin: 1rem auto;
+    }
+
+    button {
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="controls">
+    <button id="prev">&larr; Prev</button>
+    <button id="next">Next &rarr;</button>
+  </div>
+
+  <div class="carousel-container">
+    <div class="carousel-track">
+      <div class="carousel-item bg-primary">
+        <p>hello</p><br />
+        <p>hello</p><br />
+        <p>hello</p><br />
+        <p>hello</p><br />
+        <p>hello</p><br />
+        <p>hello</p><br />
+        <p>hello</p><br />
+        <p>hello</p><br />
+      </div>
+      <div class="carousel-item bg-secondary">Slide 2 is taller<br><br><br></div>
+      <div class="carousel-item bg-success">Slide 3</div>
+    </div>
+  </div>
+
+  <footer>footer</footer>
+
+  <script>
+    let index = 0;
+    const track = document.querySelector('.carousel-track');
+    const items = document.querySelectorAll('.carousel-item');
+    const prev = document.getElementById('prev');
+    const next = document.getElementById('next');
+
+    function updateCarousel() {
+      const width = items[0].offsetWidth;
+      track.style.transform = `translateX(-${index * width}px)`;
+
+      const tallest = Math.max(...Array.from(items).map(item => item.scrollHeight));
+      document.querySelector('.carousel-container').style.height = `${tallest}px`;
+    }
+
+    prev.addEventListener('click', () => {
+      if (index > 0) {
+        index--;
+        updateCarousel();
+      }
+    });
+
+    next.addEventListener('click', () => {
+      if (index < items.length - 1) {
+        index++;
+        updateCarousel();
+      }
+    });
+
+    window.addEventListener('resize', updateCarousel);
+    window.addEventListener('load', updateCarousel);
+  </script>
+
+</body>
+
+</html>

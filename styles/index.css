@@ -1,0 +1,58 @@
+:root {
+  font-family: Inter, sans-serif;
+  font-feature-settings: 'liga' 1, 'calt' 1;
+  /* fix for Chrome */
+}
+
+@supports (font-variation-settings: normal) {
+  :root {
+    font-family: InterVariable, sans-serif;
+  }
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+button:focus {
+  outline: none;
+}
+
+header,
+footer {
+  padding: 1rem 0;
+}
+
+main {
+  flex-grow: 1;
+  position: relative;
+  overflow: visible; /* Important if you have absolute children */
+}
+
+.main-content {
+  position: relative;
+  min-height: 100%; /* allow absolutely positioned children to grow with it */
+}
+
+.welcome-text {
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+.headshot-h {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .headshot-h {
+    max-height: 20rem;
+    width: auto;
+  }
+}
+
+.header-pt {
+  padding-top: 14rem;
+}
