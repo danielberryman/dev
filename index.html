@@ -17,17 +17,16 @@
     <link rel="preconnect" href="https://rsms.me/">
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles/bootstrap.min.css" />
-    <link rel="stylesheet" href="styles/layout.css" />
-    <link rel="stylesheet" href="styles/background.css" />
     <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/carousel.css" />
+    <link rel="stylesheet" href="styles/layout.css" />
 
     <title>Daniel Berryman Dev Portfolio</title>
 </head>
 
-<body class="d-flex pt-5 ps-5 pe-5">
-    <header class="h-50 w-100 d-flex flex-column justify-content-end pb-5 gap-2">
-        <div class="row">
+<body>
+    <header class="d-flex flex-column justify-content-end pb-5 gap-2 header-pt">
+        <div class="row px-5">
             <div class="col-12 col-md-6 col-lg-4 d-flex align-items-end">
                 <h1 class="m-0 fw-normal">Hi, I'm Daniel</h1>
             </div>
@@ -38,21 +37,412 @@
             </div>
         </div>
     </header>
-    <main class="flex-grow-1">
+
+    <main>
+        <div class="row px-5">
+            <div class="col-12">
+                <div class="d-flex align-items-center gap-2">
+                    <button id="navSlideHome" class="nav-slide bg-white border-0 p-0 active">Home</button>
+                    <button id="navSlideAbou" class="nav-slide bg-white border-0 p-0">Experience</button>
+                    <button id="navSlideServ" class="nav-slide bg-white border-0 p-0">Portfolio</button>
+                    <button id="navSlideCont" class="nav-slide bg-white border-0 p-0">Contact</button>
+                </div>
+            </div>
+        </div>
+        <div class="row px-5">
+            <button id="prevBtn" class="col-6 d-flex align-items-center justify-content-start border-0 bg-white">
+                <div class="d-flex align-items-center">
+                    <!-- <div id="prevLabel" class="pe-2 text-muted small"></div> -->
+                    <div id="prevLabel" class="text-muted p-1">&larr;</div>
+                </div>
+            </button>
+            <button id="nextBtn" class="col-6 d-flex align-items-center justify-content-end border-0 bg-white">
+                <div class="d-flex align-items-center">
+                    <div id="nextLabel" class="text-muted p-1">&rarr;</div>
+                    <!-- <div id="nextLabel" class="text-muted small pe-2"></div> -->
+                </div>
+            </button>
+        </div>
         <div class="row">
-            <div class="col-12 col-md-6 col-lg-4">
-                <a href="home.html" class="btn btn-primary rounded-0 w-100">ENTER</a>
-            </div>
-            <div class="col-12 col-md-6 col-lg-4 d-flex align-items-end">
-            </div>
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-12">
+                <div class="carousel-container text-white">
+                    <div class="carousel-track">
+                        <div class="carousel-item bg-primary active py-5">
+                            <div class="multi-column-text px-5 fs-3 fw-normal">
+                                <p>I’m a <span class="fw-bold">learner, creator, and problem-solver</span> who’s spent
+                                    the last six years working
+                                    across
+                                    the <span class="fw-bold">full stack—building apps, API integrations, and internal
+                                        tools</span>, mainly in
+                                    JavaScript/TypeScript with Node.js, Prisma, and frontend frameworks.
+                                </p>
+                                <p>My main goal,
+                                    no
+                                    matter the tech stack, is always the same: <span class="fw-bold">reduce friction,
+                                        increase value</span>. Whether
+                                    I’m
+                                    writing backend services, launching businesses, or singing to a crowd, I’m looking
+                                    for
+                                    the moment where things become easier, clearer, and more meaningful.</p>
+                                <p>Before I was a software engineer, I worked as a Broadway
+                                    performer, and that
+                                    experience
+                                    fundamentally shaped how I think about collaboration, communication, and clarity of
+                                    vision. Acting taught me how to listen deeply, tell stories that resonate, and bring
+                                    consistency to every performance. These skills transferred naturally to engineering,
+                                    where the core work is just another kind of performance—one that balances precision
+                                    with
+                                    creativity and requires knowing your audience just as much as your tools.</p>
+                                <p>I began my tech journey at Herff Jones, where I worked for
+                                    almost four years—first on
+                                    a
+                                    full-stack support team, debugging bugs across the stack and documenting internal
+                                    tools,
+                                    then on a frontend-focused scrum team. I eventually transitioned into a Solutions
+                                    Engineer role, where I dove deeper into backend systems and API development. From
+                                    there,
+                                    I joined Marin Software as a backend engineer, where I built integrations between
+                                    third-party ad APIs and internal systems using Node.js, TypeScript, Kafka, and SQL.
+                                    One
+                                    of my proudest contributions was re-architecting a cron-driven cost and revenue
+                                    process,
+                                    abstracting common patterns while preserving flexibility for ad network-specific
+                                    quirks.
+                                    It saved future devs countless hours and transformed the onboarding experience for
+                                    new
+                                    plugins into a form-driven setup.</p>
+                                <p>Through all of this, one of the key lessons I’ve learned is the
+                                    art of iteration—not
+                                    just
+                                    in code, but in how we think, communicate, and improve over time. I also think a lot
+                                    about the choice every engineer makes daily: to abstract or not to abstract. I
+                                    believe
+                                    in abstraction only when it reveals clarity, not when it hides complexity. Sometimes
+                                    the
+                                    most reusable solutions are the simplest, and sometimes the best thing you can do is
+                                    name something clearly and leave it alone.</p>
+                                <p>What excites me most now is bringing that mindset—technical
+                                    precision, human-centered
+                                    thinking, and a love of process—to teams that want to solve real problems. I want to
+                                    help businesses and developers alike reduce confusion, find focus, and build systems
+                                    that scale their impact. Because when you clarify the problem, and design with care,
+                                    the
+                                    solution can do more than just work—it can sing.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item bg-success pb-5">
+                            <div class="row px-5 pt-5 fs-3 fw-normal">
+                                <div class="col-12">
+                                    <h3 class="m-0 fs-6">SWE ROLES</h3>
+                                    <hr class="" />
+                                </div>
+                            </div>
+                            <div class="row px-5 fs-3 fw-normal">
+                                <div class="col-12 col-md-6 col-lg-4 pb-4">
+                                    <h3 class="m-0 fs-3 fw-bold">Marin Software</h3>
+                                    <h4 class="m-0 fs-6">2022-2024</h4>
+                                    <p class="m-0 fs-4 py-3">Worked on a global team to develop full-stack, scalable
+                                        software solutions, contributing to both our flagship cross-platform web
+                                        application and custom solutions for our largest customers.</p>
+                                    <h5 class="m-0 fs-6">JavaScript, TypeScript, NodeJS, NestJS, Kafka, Bash, MySql,
+                                        MongoDb, AngularJS</h5>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4 pb-4">
+                                    <h3 class="m-0 fs-3 fw-bold">Herff Jones</h3>
+                                    <h4 class="m-0 fs-6">2019-2022</h4>
+                                    <p class="m-0 fs-4 py-3">Used full-stack expertise to debug, enhance, and build
+                                        scalable applications, troubleshooting Java Spring Boot and Angular systems
+                                        while deploying a full-stack AngularJS and Java solution.</p>
+                                    <h5 class="m-0 fs-6">Angular, AngularJS, HTML, CSS, SASS, Java, JavaScript,
+                                        TypeScript, NodeJS, MySql</h5>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <h3 class="m-0 fs-3 fw-bold">Everlasting Wardrobe</h3>
+                                    <h4 class="m-0 fs-6">2018-2019</h4>
+                                    <p class="m-0 fs-4 py-3">Supported a growing startup by developing key features,
+                                        including a user-friendly sign-up wizard and seamless payment integration,
+                                        enhancing the overall user experience and operational efficiency.</p>
+                                    <h5 class="m-0 fs-6">JavaScript, React.JS, Ruby, Ruby On Rails, HTML, CSS</h5>
+                                </div>
+                            </div>
+                            <div class="row px-5 pt-5 fs-3 fw-normal">
+                                <div class="col-12">
+                                    <h3 class="m-0 fs-6">OTHER ROLES</h3>
+                                    <hr class="" />
+                                </div>
+                            </div>
+                            <div class="row px-5 fs-3 fw-normal">
+                                <div class="col-12 col-md-6 col-lg-4 pb-4">
+                                    <h3 class="m-0 fs-3 fw-bold">Green Mountain Energy</h3>
+                                    <h4 class="m-0 fs-6">Sales Associate, 2014</h4>
+                                    <p class="m-0 fs-4 py-3">Engaged diverse audiences at public venues, effectively
+                                        tailoring communication strategies to connect with potential customers and
+                                        consistently achieve subscription sales quotas.</p>
+                                    <h5 class="m-0 fs-6">Sales</h5>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4 pb-4">
+                                    <h3 class="m-0 fs-3 fw-bold">Hipstr Photo Booth</h3>
+                                    <h4 class="m-0 fs-6">Operations Team Lead, 2017-2018</h4>
+                                    <p class="m-0 fs-4 py-3">After three years as a dedicated photo booth attendant at
+                                        Hipstr while balancing acting jobs, I was promoted to Operations Team Lead,
+                                        optimizing operations, enhancing data accuracy, and increasing team productivity
+                                        through automation, inventory management, and staff training.</p>
+                                    <h5 class="m-0 fs-6">Operations, Inventory, APIs, Scripting</h5>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <h3 class="m-0 fs-3 fw-bold">Theatres Across North America</h3>
+                                    <h4 class="m-0 fs-6">2012-2018</h4>
+                                    <p class="m-0 fs-4 py-3">Performed in Broadway National Tours, Off-Broadway, and
+                                        regional theatres, showcasing versatility and vocal excellence. Key credits
+                                        include Les Misérables (Swing, Broadway National Tour), The Fantasticks (Matt,
+                                        Off-Broadway), and performances at the Denver Center, St. Louis MUNY, and
+                                        Goodspeed Opera House.</p>
+                                    <!-- <h5 class="m-0 fs-6">JavaScript, React.JS, Ruby, Ruby On Rails, HTML, CSS</h5> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item bg-danger pb-5">
+                            <div class="row px-5 pt-5 fs-3 fw-normal">
+                                <div class="col-12">
+                                    <h3 class="m-0 fs-6">Full-Stack Web Apps</h3>
+                                    <hr class="" />
+                                </div>
+                            </div>
+                            <div class="row px-5 fs-3 fw-normal">
+                                <div class="col-12 col-md-6 col-lg-4 pb-4">
+                                    <a href="https://www.theatrefortheworld.com" target="_blank"
+                                        class="text-white text-decoration-none m-0 p-0">
+                                        <h3 class="m-0 fs-3 fw-bold pb-2">Theatre For The World</h3>
+                                        <img src="/assets/tftw.png" class="w-100" />
+                                        <!-- <p class="m-0 fs-4 py-3">Worked on a global team to develop full-stack, scalable software solutions, contributing to both our flagship cross-platform web application and custom solutions for our largest customers.</p> -->
+                                        <!-- <h5 class="m-0 fs-6">JavaScript, TypeScript, NodeJS, NestJS, Kafka, Bash, MySql, MongoDb, AngularJS</h5> -->
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row px-5 pt-5 fs-3 fw-normal">
+                                <div class="col-12">
+                                    <h3 class="m-0 fs-6">HTML & CSS Sites</h3>
+                                    <hr class="" />
+                                </div>
+                            </div>
+                            <div class="row px-5 fs-3 fw-normal">
+                                <div class="col-12 col-md-6 col-lg-4 pb-4">
+                                    <h3 class="m-0 fs-3 fw-bold">
+                                        <a href="https://www.bwaylove.com" target="_blank"
+                                            class="text-white text-decoration-none m-0 p-0">
+                                            BWAY LOVE
+                                        </a>
+                                    </h3>
+                                    <h4 class="m-0 fs-6 d-flex gap-2 fw-bold pb-4">
+                                        <a href="https://github.com/danielberryman/bwaylove" target="_blank" class="m-0 fs-6 text-white">Github</a>
+                                    </h4>
+                                    <a href="https://www.bwaylove.com" target="_blank"
+                                        class="text-white text-decoration-none m-0 p-0">
+                                        <img src="/assets/bwaylove.png" class="w-100" />
+                                    </a>
+                                    <!-- <p class="m-0 fs-4 py-3">Worked on a global team to develop full-stack, scalable software solutions, contributing to both our flagship cross-platform web application and custom solutions for our largest customers.</p> -->
+                                    <!-- <h5 class="m-0 fs-6">JavaScript, TypeScript, NodeJS, NestJS, Kafka, Bash, MySql, MongoDb, AngularJS</h5> -->
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4 pb-4">
+                                    <h3 class="m-0 fs-3 fw-bold">
+                                        <a href="https://www.uwschildrenschoir.com" target="_blank"
+                                            class="text-white text-decoration-none m-0 p-0">
+                                            UWS Children's Choir
+                                        </a>
+                                    </h3>
+                                    <h4 class="m-0 fs-6 d-flex gap-2 fw-bold pb-4">
+                                        <a href="https://github.com/danielberryman/uwscc" target="_blank" class="m-0 fs-6 text-white">Github</a>
+                                    </h4>
+                                    <a href="https://www.uwschildrenschoir.com" target="_blank"
+                                        class="text-white text-decoration-none m-0 p-0">
+                                        <img src="/assets/uwschoir.png" class="w-100" />
+                                    </a>
+                                    <!-- <p class="m-0 fs-4 py-3">Worked on a global team to develop full-stack, scalable software solutions, contributing to both our flagship cross-platform web application and custom solutions for our largest customers.</p> -->
+                                    <!-- <h5 class="m-0 fs-6">JavaScript, TypeScript, NodeJS, NestJS, Kafka, Bash, MySql, MongoDb, AngularJS</h5> -->
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4 pb-4">
+                                    <h3 class="m-0 fs-3 fw-bold">
+                                        <a href="https://www.maggiemayfromca.com" target="_blank"
+                                            class="text-white text-decoration-none m-0 p-0">
+                                            Maggie May
+                                        </a>
+                                    </h3>
+                                    <h4 class="m-0 fs-6 d-flex gap-2 fw-bold pb-4">
+                                        <a href="https://github.com/danielberryman/maggiemayfromca" target="_blank" class="m-0 fs-6 text-white">Github</a>
+                                    </h4>
+                                    <a href="https://www.maggiemayfromca.com" target="_blank"
+                                        class="text-white text-decoration-none m-0 p-0">
+                                        <img src="/assets/maggie.png" class="w-100" />
+                                    </a>
+                                    <!-- <p class="m-0 fs-4 py-3">Worked on a global team to develop full-stack, scalable software solutions, contributing to both our flagship cross-platform web application and custom solutions for our largest customers.</p> -->
+                                    <!-- <h5 class="m-0 fs-6">JavaScript, TypeScript, NodeJS, NestJS, Kafka, Bash, MySql, MongoDb, AngularJS</h5> -->
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4 pb-4">
+                                    <h3 class="m-0 fs-3 fw-bold">
+                                        <a href="https://danielberryman.github.io/personal-portfolio-website/" target="_blank"
+                                            class="text-white text-decoration-none m-0 p-0">
+                                            Old Portfolio
+                                        </a>
+                                    </h3>
+                                    <h4 class="m-0 fs-6 d-flex gap-2 fw-bold pb-4">
+                                        <a href="https://github.com/danielberryman/personal-portfolio-website" target="_blank" class="m-0 fs-6 text-white">Github</a>
+                                    </h4>
+                                    <a href="https://danielberryman.github.io/personal-portfolio-website/" target="_blank"
+                                        class="text-white text-decoration-none m-0 p-0">
+                                        <img src="/assets/old-portfolio.png" class="w-100" />
+                                    </a>
+                                    <!-- <p class="m-0 fs-4 py-3">Worked on a global team to develop full-stack, scalable software solutions, contributing to both our flagship cross-platform web application and custom solutions for our largest customers.</p> -->
+                                    <!-- <h5 class="m-0 fs-6">JavaScript, TypeScript, NodeJS, NestJS, Kafka, Bash, MySql, MongoDb, AngularJS</h5> -->
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4 pb-4">
+                                    <h3 class="m-0 fs-3 fw-bold">
+                                        <a href="https://danielberryman.github.io/broadway-sings-2024/" target="_blank"
+                                            class="text-white text-decoration-none m-0 p-0">
+                                            Broadway Sings
+                                        </a>
+                                    </h3>
+                                    <h4 class="m-0 fs-6 d-flex gap-2 fw-bold pb-4">
+                                        <a href="https://github.com/danielberryman/broadway-sings-2024" target="_blank" class="m-0 fs-6 text-white">Github</a>
+                                    </h4>
+                                    <a href="https://danielberryman.github.io/broadway-sings-2024/" target="_blank"
+                                        class="text-white text-decoration-none m-0 p-0">
+                                        <img src="/assets/broadway-sings.png" class="w-100" />
+                                    </a>
+                                    <!-- <p class="m-0 fs-4 py-3">Worked on a global team to develop full-stack, scalable software solutions, contributing to both our flagship cross-platform web application and custom solutions for our largest customers.</p> -->
+                                    <!-- <h5 class="m-0 fs-6">JavaScript, TypeScript, NodeJS, NestJS, Kafka, Bash, MySql, MongoDb, AngularJS</h5> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item bg-secondary py-5">
+                            <div class="row px-5">
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <img src="/assets/headshot.jpg" class="w-100" />
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4">
+                                    <p>I'm a full-stack software engineer from Seattle, now based in New York City with my family. I'm passionate about web technologies, scalable systems, and creating tools that empower both users and teams. With a background that spans the arts and engineering, I bring creativity, clarity, and care to every project I work on.</p>
+                                    <div class="d-flex gap-4 align-items-center">
+                                        <a href="mailto:dberrymandev@gmail.com" target="_blank" class="btn btn-light rounded-0">Email Me</a>
+                                        <a href="https://www.linkedin.com/in/daniel-berryman" target="_blank" class="text-white">LinkedIn</a>
+                                        <a href="https://github.com/danielberryman" target="_blank" class="text-white">Github</a>
+                                        
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-4">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
 
-    <footer class="text-center m-0 py-4 fs-6">
+    <footer class="text-center m-0 py-4 small position-relative">
         &copy; 2025 dev.danielberryman.com. All rights reserved.
     </footer>
+    </div>
+
+    <script>
+        const slideTextColors = [
+            "text-primary",
+            "text-success",
+            "text-danger",
+            "text-secondary",
+        ];
+
+        let index = 0;
+        let lastIndex = 0;
+        const track = document.querySelector('.carousel-track');
+        const items = document.querySelectorAll('.carousel-item');
+        const prev = document.getElementById('prevBtn');
+        const next = document.getElementById('nextBtn');
+        const slides = document.querySelectorAll('.nav-slide');
+        const navHome = document.getElementById('navSlideHome');
+        const navAbout = document.getElementById('navSlideAbou');
+        const navServices = document.getElementById('navSlideServ');
+        const navContact = document.getElementById('navSlideCont');
+
+        function updateCarousel() {
+            const width = items[0].offsetWidth;
+            track.style.transform = `translateX(-${index * width}px)`;
+
+            const tallest = Math.max(...Array.from(items).map(item => item.scrollHeight));
+            document.querySelector('.carousel-container').style.height = `${tallest > 600 ? tallest : 600}px`;
+
+            slides.forEach((slide, i) => {
+                slide.classList.remove('active', 'prev', slideTextColors[lastIndex]);
+
+                if (i === index) {
+                    slide.classList.add('active', slideTextColors[index]);
+                    slide.focus();
+                } else if (i === index - 1) {
+                    slide.classList.add('prev');
+                }
+            });
+
+            prev.disabled = index === 0;
+            next.disabled = index === items.length - 1;
+        }
+
+        prev.addEventListener('click', () => {
+            if (index > 0) {
+                lastIndex = index;
+                index--;
+                updateCarousel(1);
+            }
+        });
+
+        next.addEventListener('click', () => {
+            if (index < items.length - 1) {
+                lastIndex = index;
+                index++;
+                updateCarousel(-1);
+            }
+        });
+
+        navHome.addEventListener('click', () => {
+            if (index !== 0) {
+                lastIndex = index;
+                index = 0;
+                updateCarousel();
+            }
+        });
+
+        navAbout.addEventListener('click', () => {
+            if (index !== 1) {
+                lastIndex = index;
+                index = 1;
+                updateCarousel();
+            }
+        });
+
+        navServices.addEventListener('click', () => {
+            if (index !== 2) {
+                lastIndex = index;
+                index = 2;
+                updateCarousel();
+            }
+        });
+
+        navContact.addEventListener('click', () => {
+            if (index !== 3) {
+                lastIndex = index;
+                index = 3;
+                updateCarousel();
+            }
+        });
+
+        document.addEventListener("keydown", function (event) {
+            if (event.key === "ArrowLeft") {
+                prev.click();
+            } else if (event.key === "ArrowRight") {
+                next.click();
+            }
+        })
+
+        window.addEventListener('resize', updateCarousel);
+        window.addEventListener('load', updateCarousel);            
+    </script>
 </body>
 
 </html>
